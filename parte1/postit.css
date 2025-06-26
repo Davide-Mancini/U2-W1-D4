@@ -1,0 +1,105 @@
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-size: 50px;
+  padding: 0.5em;
+}
+p {
+  font-size: 25px;
+}
+.lavagna {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.lavagna div {
+  animation: caduta 3s linear 0s;
+}
+
+.postitgiallo {
+  width: 350px;
+  height: 250px;
+  box-shadow: 5px 5px 12px 1px #000000;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s linear 0s;
+  background-color: #fafbc9;
+  transform: rotate(357deg);
+}
+.postitverde {
+  width: 350px;
+  height: 250px;
+  box-shadow: 5px 5px 12px 1px #000000;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s linear 0s;
+  background-color: #cafaca;
+  transform: rotate(3deg);
+}
+.postitviola {
+  width: 350px;
+  height: 250px;
+  box-shadow: 5px 5px 12px 1px #000000;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s linear 0s;
+  background-color: #c7c7f4;
+  transform: rotate(357deg);
+}
+
+.postitgiallo:hover {
+  scale: 1.2;
+  z-index: 10;
+  box-shadow: 5px 5px 25px 10px #000000;
+  transform: rotate(360deg);
+}
+.postitverde:hover {
+  scale: 1.2;
+  z-index: 10;
+  box-shadow: 5px 5px 25px 10px #000000;
+  transform: rotate(0deg);
+}
+.postitviola:hover {
+  scale: 1.2;
+  z-index: 10;
+  box-shadow: 5px 5px 25px 10px #000000;
+  transform: rotate(360deg);
+}
+@keyframes caduta {
+  0% {
+    scale: 4;
+  }
+  20% {
+    scale: 3.5;
+  }
+  35% {
+    scale: 3;
+  }
+  50% {
+    scale: 2.5;
+  }
+  65% {
+    scale: 2;
+  }
+  80% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
