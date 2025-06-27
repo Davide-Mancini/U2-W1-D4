@@ -20,30 +20,37 @@ body {
 span i {
   color: #6a889c;
 }
-.parole {
-  display: flex;
-  flex-direction: column;
+.parole i {
+  position: absolute;
+  display: inline-block;
+  animation: sposta 10s linear 0s infinite;
 }
-.parole i:nth-child(1) {
-  animation: sposta 6s linear 1s infinite;
-}
-.parole i:nth-child(2) {
-  animation: sposta 6s linear 1s infinite;
-}
-.parole i:nth-child(3) {
-  animation: sposta 6s linear 1s infinite;
-}
+
 @keyframes sposta {
   0% {
-    transform: translateY(-76px);
+    transform: translateY(-2px);
+    opacity: 0;
   }
-  25% {
-  }
+
   50% {
+    transform: translateY(0px);
+    opacity: 1;
   }
-  75% {
+  60% {
+    opacity: 0;
   }
+
   100% {
-    transform: translateY(66px);
+    transform: translateY(10px);
+    opacity: 0;
   }
+}
+.parole i:nth-child(1) {
+  animation-delay: 0s;
+}
+.parole i:nth-child(2) {
+  animation-delay: 5s;
+}
+.parole i:nth-child(3) {
+  animation-delay: 10s;
 }
